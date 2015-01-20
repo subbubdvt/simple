@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hello PhoneGap</title>
+</head>
+<body>
+    <button id="simple">Do It</button>
+    <button id="clear">Clear</button>
+    <div id="results"></div>
+
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/simpDO.js"></script>
+    <script>
+	$('#simple').click(function() {
+	    SIMPLE.DoIt($('#results'));
+	});
+	$('#clear').click(function() {
+	    $('#results').html('');
+	});
+    </script>
+
+</body>
+</html>
